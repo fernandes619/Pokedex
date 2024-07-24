@@ -13,7 +13,7 @@
                <div class="type-row">
                    @foreach (var type in pokemon.types)
                     {
-                        <span>@type.type.name</span>
+                        <span class="type-badge" style="background-color: @PokeColor.GetTypeColor(type.type.name)">@type.type.name</span>
                     }
                </div>
            </div>
